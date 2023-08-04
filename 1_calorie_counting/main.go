@@ -18,7 +18,7 @@ func main() {
 	log.SetPrefix("calories_counting: ")
 	log.SetFlags(0)
 
-	input, err := helpers.GetInput("input.txt")
+	input, err := helpers.GetInput("day1_input.txt")
 
 	if err != nil {
 		log.Fatal("Error opening input file.")
