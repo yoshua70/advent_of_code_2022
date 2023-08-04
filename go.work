@@ -1,0 +1,6 @@
+go 1.20
+
+use (
+	./1_calorie_counting
+	./helpers
+)
