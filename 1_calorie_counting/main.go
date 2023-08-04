@@ -4,8 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"log"
-	"os"
 	"strconv"
+
+	"yoshua70/helpers"
 )
 
 /*
@@ -14,14 +15,14 @@ import (
 */
 
 func main() {
-	input, err := os.Open("input.txt")
+	log.SetPrefix("calories_counting: ")
+	log.SetFlags(0)
+
+	input, err := helpers.GetInput("input.txt")
 
 	if err != nil {
-		log.Fatal(err)
-
+		log.Fatal("Error opening input file.")
 	}
-
-	defer input.Close()
 
 	scanner := bufio.NewScanner(input)
 
