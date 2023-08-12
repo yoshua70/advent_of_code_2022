@@ -4,7 +4,8 @@ import (
 	"bufio"
 	"log"
 	"strings"
-	"yoshua70/helpers"
+
+	"github.com/yoshua70/advent_of_code_2022/helpers"
 )
 
 func get_score_2() int {

@@ -5,7 +5,7 @@ import (
 	"log"
 	"strconv"
 
-	"yoshua70/helpers"
+	"github.com/yoshua70/advent_of_code_2022/helpers"
 )
 
 /*

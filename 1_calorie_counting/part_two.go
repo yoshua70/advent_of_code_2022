@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strconv"
 
-	"yoshua70/helpers"
+	"github.com/yoshua70/advent_of_code_2022/helpers"
 )
 
 func total_top_three_calories() int {
