@@ -28,11 +28,11 @@ func main() {
 
 	if part == 1 {
 		answer := partOne(input)
-		fmt.Println("[Day 01] Answer:", answer)
+		fmt.Println("[Day 02] Answer:", answer)
 
 	} else {
 		answer := partTwo(input)
-		fmt.Println("[Day 01] Answer:", answer)
+		fmt.Println("[Day 02] Answer:", answer)
 	}
 }
 
