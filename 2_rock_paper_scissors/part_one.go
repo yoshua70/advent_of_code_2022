@@ -3,11 +3,17 @@ package main
 import (
 	"bufio"
 	"log"
-	"os"
 	"strings"
+	"yoshua70/helpers"
 )
 
-func get_score(input *os.File) int {
+func get_score() int {
+	input, err := helpers.GetInput("day2_input.txt")
+
+	if err != nil {
+		log.Fatal("Error opening input file.")
+	}
+
 	scanner := bufio.NewScanner(input)
 
 	score := 0
