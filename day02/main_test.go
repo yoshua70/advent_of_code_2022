@@ -131,7 +131,7 @@ func TestGetPlayScore_WithCZ_ShouldReturn6(t *testing.T) {
 	}
 }
 
-func TestPlayToScore(t *testing.T) {
+func TestPlayToScore_WithAY_ShouldReturn4(t *testing.T) {
 	play := []string{"A", "Y"}
 	want := 4
 
@@ -150,5 +150,16 @@ func TestPlayToScore_WithBX_ShouldReturn1(t *testing.T) {
 
 	if want != res {
 		t.Fatalf(`PlayToScore(["B", "X"]) = %v, want equal for %#v`, res, want)
+	}
+}
+
+func TestPlayToScore_WithCZ_ShouldReturn7(t *testing.T) {
+	play := []string{"C", "Z"}
+	want := 7
+
+	res := PlayToScore(play)
+
+	if want != res {
+		t.Fatalf(`PlayToScore(["C", "Z"]) = %v, want equal for %#v`, res, want)
 	}
 }
