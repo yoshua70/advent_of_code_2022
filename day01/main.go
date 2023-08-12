@@ -21,6 +21,7 @@ func main() {
 
 	input, err := helpers.GetInput("./resources/day01_input.txt")
 	if err != nil {
+		fmt.Println(err.Error())
 		panic("Error while opening input file.")
 	}
 	defer input.Close()
