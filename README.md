@@ -6,7 +6,7 @@ Clone the repository and run `go mod tidy`.
 
 ## How to run
 
-`cd` into the day you want and run the `main.go` file by passing the challenge's part whose answer you want:
+`cd` into the day you want and run the `main.go` file by passing the challenge's part which answer you want:
 
 ```sh
 $ go run main.go --part [PART]
