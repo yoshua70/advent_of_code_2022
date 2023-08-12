@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("[Day 01] Calories Counting")
 	fmt.Println("[Day 01] Running Part", part)
 
-	input, err := helpers.GetInput("./resources/day01_input.txt")
+	input, err := helpers.GetInput("../resources/day01_input.txt")
 	if err != nil {
 		fmt.Println(err.Error())
 		panic("Error while opening input file.")
